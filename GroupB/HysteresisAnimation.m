@@ -60,7 +60,7 @@ while 1
     cla(axsHyst);
     hold on;
     
-    scatter(1./beta(1:i), N(1:i), '.');
+    plot(1./beta(1:i), N(1:i));
     scatter(1/beta(i), N(i), 100, 'o');
     
     % Format the graphs
@@ -69,8 +69,8 @@ while 1
     ylabel('Population N')
     
     % Next point
-    i = i+100;
-    pause(0.2);
+    i = i+50;
+    pause(0.1);
     
     % Loop on the second cycle
     if t(i) >= 2000*2*pi
