@@ -12,7 +12,7 @@ N0 = 1.5;
 [t,N]=ode45('Spruce_Budworm_ODE_modBeta',[0 tend],N0,[],alpha);
 
 % And must be recalculated outside of it as well (for drawing graphs)
-f = 0.001;
+f = 50*0.001;
 beta = 2*(cos(t*f)+1.5);
 
 % Count the number of cycles

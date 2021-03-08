@@ -10,7 +10,7 @@ function Np = Spruce_Budworm_ODE_modBeta(t,N,flag,alpha)
     %OUTPUT:
     %N is the population of spruce budworms
     %Np=zeros(size(N)
-    f = 0.001;
+    f = 10*0.001;
     beta = 2*(cos(f*t)+1.5);
     Np=N*(1-alpha*N)-beta*(N*N)/(1+N*N);
 end
